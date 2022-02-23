@@ -2,8 +2,8 @@ name: 163Music
 
 on:
   workflow_dispatch:
-#   push:
-#     branches: [ master ]
+  push:
+    branches: [ master ]
 #   pull_request:
 #     branches: [ master ]
   schedule:
@@ -30,4 +30,6 @@ jobs:
         netease_username: ${{ secrets.USER }}
         netease_password: ${{ secrets.PWD }}
       run: |
+        echo "hello"
+        echo $netease_username
         python3 music.py

@@ -25,7 +25,9 @@ except:
 
 netease_username = os.environ.get("netease_username")
 netease_password = os.environ.get("netease_password")
-
+print("环境变量")
+print("netease_username: ",netease_username)
+print("netease_password: ",netease_password)
 
 def encrypt(key, text):
     backend = default_backend()
